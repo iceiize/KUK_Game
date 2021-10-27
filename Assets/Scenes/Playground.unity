@@ -202,11 +202,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5322152292654062235, guid: 27cef2a8c4d88cf498a11c32f2fd4c4b, type: 3}
   m_PrefabInstance: {fileID: 1313437403}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &38130827 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 225773266, guid: 9a9f6ba7a2c66ba42bdb820ab83cef47, type: 3}
-  m_PrefabInstance: {fileID: 2300924469439180797}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &51600857 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2214307348749024516, guid: a9ec45772d935864bbb59e8f4d2feab7, type: 3}
@@ -1070,11 +1065,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad08133495a7adb49b6ccc63132fd923, type: 3}
---- !u!82 &433631721 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 2120600999, guid: 9a9f6ba7a2c66ba42bdb820ab83cef47, type: 3}
-  m_PrefabInstance: {fileID: 2300924469439180797}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &444330077
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1464,36 +1454,6 @@ Transform:
   m_Father: {fileID: 2093953379}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &647972096 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1670260605535137439, guid: 9a9f6ba7a2c66ba42bdb820ab83cef47, type: 3}
-  m_PrefabInstance: {fileID: 2300924469439180797}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &647972097
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 647972096}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8509431e2007cba4884ce202e928a8c5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0.5
-  rotSpeed: 0.8
-  prefabBullet: {fileID: 1222719023}
-  gunPosition: {fileID: 38130827}
-  gunPower: 15
-  gunCooldown: 2
-  gunCooldownCount: 0
-  hasGun: 0
-  bulletCount: 0
-  coinCount: 0
-  manager: {fileID: 997274474}
-  audioCoin: {fileID: 433631721}
-  audioFire: {fileID: 1193818321}
 --- !u!1 &659498559 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1975457108487340, guid: ec3e8f3ed27e2244caaedaf589590a03, type: 3}
@@ -2490,11 +2450,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c87cdf4f29eace459f47bdc882acff4, type: 3}
---- !u!82 &1193818321 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 83958456, guid: 9a9f6ba7a2c66ba42bdb820ab83cef47, type: 3}
-  m_PrefabInstance: {fileID: 2300924469439180797}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1200425421 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1340689672677423812, guid: 0841527e7a56414448c3a4f010c3e1fe, type: 3}
@@ -6061,6 +6016,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 647972097, guid: 9a9f6ba7a2c66ba42bdb820ab83cef47, type: 3}
+      propertyPath: manager
+      value: 
+      objectReference: {fileID: 997274474}
+    - target: {fileID: 647972097, guid: 9a9f6ba7a2c66ba42bdb820ab83cef47, type: 3}
+      propertyPath: prefabBullet
+      value: 
+      objectReference: {fileID: 1222719023}
     - target: {fileID: 1662652588833497867, guid: 9a9f6ba7a2c66ba42bdb820ab83cef47, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -6109,10 +6072,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 2027138144534954188, guid: 9a9f6ba7a2c66ba42bdb820ab83cef47, type: 3}
-      propertyPath: manager
-      value: 
-      objectReference: {fileID: 997274474}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9a9f6ba7a2c66ba42bdb820ab83cef47, type: 3}
 --- !u!4 &2417635987960079403 stripped
